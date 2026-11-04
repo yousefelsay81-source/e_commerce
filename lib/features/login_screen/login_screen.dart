@@ -1,9 +1,12 @@
+import 'package:e_commerce/components/custom_circle_avatar.dart';
+import 'package:e_commerce/components/custom_elevated_button.dart';
 import 'package:e_commerce/components/custom_text_filed.dart';
+import 'package:e_commerce/config/routes.dart';
 import 'package:e_commerce/core/utils/app_images.dart';
 import 'package:e_commerce/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
-
 import '../../core/utils/app_colors.dart';
+
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -23,7 +26,8 @@ class _LoginScreenState extends State<LoginScreen>
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Welcome Back!"),
+          title: Text("Welcome Back!",
+            style: AppStyles.bold36Black,),
         ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -39,15 +43,33 @@ class _LoginScreenState extends State<LoginScreen>
                 prefixIcon: Image.asset(AppImages.lockIcon),
                 suffixIcon: IconButton(onPressed: (){}, icon: Icon(Icons.remove_red_eye_outlined)),
               ),
-              TextButton(onPressed: (){},
+              TextButton(onPressed: (){
+                Navigator.of(context).pushNamed(AppRoutes.forgetPasswordRoute);
+              },
                   child: Text("Forget Password?",style: AppStyles.regular12ForgetPassword,)),
-              Container(
-                padding: EdgeInsets.symmetric(horizontal: width * .01, vertical: height * .01),
-                margin: EdgeInsets.symmetric(horizontal: width * .01, vertical: height * .01),
-                width: double.infinity,
-                color: AppColors.forgetPasswordColor,
-                child: TextButton(onPressed: (){}, child: Text("Login",style: AppStyles.semiBold20White,)),
-              )
+              SizedBox(height: height * .03,),
+              CustomElevatedBottom(text: ("Login"), onButonClick: (){}),
+              SizedBox(height: height*.06,),
+              Center(child: Text("- OR Continue with -")),
+              SizedBox(height: height * .03,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  CustomLogbuttom(iconPath: AppImages.googleIcon, onTap: (){}),
+                  SizedBox(width: width * .01,),
+                  CustomLogbuttom(iconPath: AppImages.iphoneIcon, onTap: (){}),
+                  SizedBox(width: width * .01,),
+                  CustomLogbuttom(iconPath: AppImages.facebookIcon, onTap: (){})
+                ],
+              ),
+              SizedBox(height: height * .03,),
+              Center(
+                child: Text("Create an Account",
+                  style: AppStyles.regular12ForgetPassword.copyWith(color: AppColors.greyColor),),
+              ),
+              TextButton(onPressed: (){
+                Navigator.of(context).pushNamed(AppRoutes.registerRoute);
+              }, child: Text("Sign Up",style: AppStyles.regular12ForgetPassword,))
             ],
           ),
         ),

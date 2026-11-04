@@ -1,4 +1,7 @@
 import 'package:e_commerce/config/routes.dart';
+import 'package:e_commerce/features/forgetPassword_screen/forgetPassword_screen.dart';
+import 'package:e_commerce/features/get_started_screen.dart';
+import 'package:e_commerce/features/register_screen/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'features/login_screen/login_screen.dart';
 
@@ -13,9 +16,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.loginRoute,
+      initialRoute: AppRoutes.getStartedRoute,
       routes: {
+        AppRoutes.getStartedRoute: (context) => GetStartedScreen(),
         AppRoutes.loginRoute: (context) => LoginScreen(),
+        AppRoutes.registerRoute: (context) => RegisterScreen(),
+        AppRoutes.forgetPasswordRoute: (context) => ForgetPasswordScreen(),
       },
     );
   }

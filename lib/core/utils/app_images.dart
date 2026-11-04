@@ -3,4 +3,8 @@ class AppImages {
   static const String userIcon = "assets/User.png";
   static const String emailIcon = "assets/Mail.png";
   static const String lockIcon = "assets/Group 2.png";
+  static const String facebookIcon = "assets/Group.png";
+  static const String iphoneIcon = "assets/apple 1.png";
+  static const String googleIcon = "assets/google 1.png";
+  static const String getStartedImage = "assets/unsplash_fouVDmGXoPI.png";
 }

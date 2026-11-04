@@ -26,7 +26,8 @@ class _RegisterScreenState extends State<RegisterScreen>
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Create an account"),
+          title: Text("Create an account",
+            style: AppStyles.bold36Black,),
         ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -37,22 +38,25 @@ class _RegisterScreenState extends State<RegisterScreen>
                 labelText: "User Name Or Email",
                 prefixIcon: Image.asset(AppImages.userIcon),
               ),
-              SizedBox(height: height * .05,),
+              SizedBox(height: height * .04,),
               CustomTextFiled(labelText: "Password",
                 prefixIcon: Image.asset(AppImages.lockIcon),
                 suffixIcon: IconButton(onPressed: (){}, icon: Icon(Icons.remove_red_eye_outlined)),
               ),
+              SizedBox(height: height * .04,),
               CustomTextFiled(
                 labelText: "ConfirmPassword",
                 prefixIcon: Image.asset(AppImages.lockIcon),
                 suffixIcon: IconButton(onPressed: (){}, icon: Icon(Icons.remove_red_eye_outlined)),
               ),
-              TextButton(onPressed: (){},
-                  child: Text("Forget Password?",style: AppStyles.regular12ForgetPassword,)),
-              CustomElevatedBottom(text: ("Login"), onButonClick: (){}),
-              SizedBox(height: height*.06,),
-              Center(child: Text("- OR Continue with -")),
               SizedBox(height: height * .03,),
+              Text("By clicking the Register button, you agree to the public offer",
+                style: AppStyles.medium12Form,),
+              SizedBox(height: height * .02,),
+              CustomElevatedBottom(text: ("Create Account"), onButonClick: (){}),
+              SizedBox(height: height*.04,),
+              Center(child: Text("- OR Continue with -")),
+              SizedBox(height: height * .02,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -66,9 +70,12 @@ class _RegisterScreenState extends State<RegisterScreen>
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Create an Account",
+                  Text("I Already Have an Account",
                     style: AppStyles.regular12ForgetPassword.copyWith(color: AppColors.greyColor),),
-                  TextButton(onPressed: (){}, child: Text("Sign Up",style: AppStyles.regular12ForgetPassword,))
+                  TextButton(onPressed: (){
+                    // todo => login
+                    Navigator.pop(context);
+                  }, child: Text("Login",style: AppStyles.regular12ForgetPassword,))
                 ],
               )
             ],

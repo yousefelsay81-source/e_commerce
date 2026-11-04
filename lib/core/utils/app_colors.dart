@@ -8,4 +8,5 @@ class AppColors {
   static const Color redColor = Colors.red;
   static const Color textFormFiledColor = Color(0xff676767);
   static const Color forgetPasswordColor = Color(0xffF83758);
+  static const Color circleAvatarColor = Color(0xFFFF8A9E);
 }

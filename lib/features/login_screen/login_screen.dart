@@ -1,4 +1,4 @@
-import 'package:e_commerce/components/custom_circle_avatar.dart';
+import 'package:e_commerce/components/custom_log_button.dart';
 import 'package:e_commerce/components/custom_elevated_button.dart';
 import 'package:e_commerce/components/custom_text_filed.dart';
 import 'package:e_commerce/config/routes.dart';

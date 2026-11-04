@@ -10,6 +10,9 @@ class AppStyles
   static TextStyle regular12ForgetPassword = GoogleFonts.inter(
       fontWeight: FontWeight.w400,fontSize: 12,color: AppColors.forgetPasswordColor
   );
+  static TextStyle regular12black = GoogleFonts.inter(
+      fontWeight: FontWeight.w400,fontSize: 12,color: AppColors.blackColor
+  );
   static TextStyle semiBold20White = GoogleFonts.inter(
       fontWeight: FontWeight.w700,fontSize: 20,color: AppColors.whiteColor
   );

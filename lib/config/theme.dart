@@ -16,7 +16,8 @@ class AppTheme {
           selectedLabelStyle: AppStyles.regular12ForgetPassword,
           unselectedLabelStyle: AppStyles.regular12black
       ),
-      floatingActionButtonTheme: FloatingActionButtonThemeData(
+      floatingActionButtonTheme: FloatingActionButtonThemeData
+        (
           backgroundColor: AppColors.whiteColor,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(35),

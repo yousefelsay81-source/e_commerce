@@ -11,4 +11,10 @@ class AppImages {
   static const String favoriteIcon = "assets/Vector.png";
   static const String searchIcon = "assets/search 1.png";
   static const String settingIcon = "assets/settings.png";
+  static const String logoAppBar = "assets/logoipsum-255 1.png";
+  static const String profileImage = "assets/2289_SkVNQSBGQU1PIDEwMjgtMTE2 1.png";
+  static const String categoryImage = "assets/Ellipse 4.png";
+  static const String bannerImage1 = "assets/Rectangle 48.png";
+  static const String bannerImage2 = "assets/unsplash_NoVnXXmDNi0.png";
+  static const String productImage = "assets/Mask Group.png";
 }

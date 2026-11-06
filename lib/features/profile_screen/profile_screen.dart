@@ -2,10 +2,10 @@ import 'package:e_commerce/config/routes.dart';
 import 'package:e_commerce/core/utils/app_images.dart';
 import 'package:flutter/material.dart';
 import '../../core/utils/app_colors.dart';
-import '../tabs/favorite_tab.dart';
-import '../tabs/home_tab.dart';
-import '../tabs/search_tab.dart';
-import '../tabs/setting_tab.dart';
+import '../tabs/whilist/favorite_tab.dart';
+import '../tabs/home/home_tab.dart';
+import '../tabs/search/search_tab.dart';
+import '../tabs/setting/setting_tab.dart';
 
 class ProfileScreen extends StatefulWidget
 {

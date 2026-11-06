@@ -14,8 +14,12 @@ class CustomFilterAndSort extends StatelessWidget
     return InkWell(
       onTap: onPressed,
       child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: AppColors.whiteColor,
+        ),
         margin: EdgeInsetsGeometry.all(8),
-        color: AppColors.whiteColor,
+        padding: EdgeInsets.symmetric( horizontal: 10, vertical: 6,),
         child: Row(
           children: [
             Text(text),

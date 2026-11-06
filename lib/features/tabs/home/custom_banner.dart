@@ -21,7 +21,7 @@ class CustomBanner extends StatelessWidget {
       isLoop: true,
       indicatorBackgroundColor: AppColors.greyColor,
       width: double.infinity,
-      height: 200,
+      height: 180,
       autoPlayInterval: 3000,
       children: images.map((image) {
         return Image.asset(

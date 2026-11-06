@@ -84,7 +84,16 @@ class _HomeTabState extends State<HomeTab> {
                   ]
               ),
               SizedBox(height: height*.03,),
-              Text("Top Pickers", style: AppStyles.bold36Black.copyWith(fontSize: 18),),
+              Row(
+                children: [
+                  Text("Top Pickers For You", style: AppStyles.bold36Black.copyWith(fontSize: 18),),
+                  Spacer(),
+                  TextButton(onPressed: (){},
+                      child: Text("View all",style: AppStyles.regular12ForgetPassword.copyWith(fontSize: 15),),
+                  ),
+                  Icon(Icons.arrow_forward, color: AppColors.forgetPasswordColor)
+                ],
+              ),
               SizedBox(height: height * .02,),
               SizedBox(
                 height: height * .4,
@@ -99,7 +108,7 @@ class _HomeTabState extends State<HomeTab> {
                       salary: "₹1500",
                       discount: "₹2499",
                       offer: "40%Off",
-                      view: "56890",
+                      view: 56890,
                     );
                   },
                   separatorBuilder: (context, index){

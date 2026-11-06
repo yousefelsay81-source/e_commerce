@@ -11,7 +11,7 @@ class TopPicks extends StatelessWidget
   String salary;
   String? discount;
   String? offer;
-  String view;
+  int view;
   TopPicks({super.key, required this.imagePath,
     required this.nameProduct, required this.descProduct,
     required this.salary, this.discount, this.offer, required this.view
@@ -49,7 +49,7 @@ class TopPicks extends StatelessWidget
               Icon(Icons.star, color: AppColors.yellowColor,),
               Icon(Icons.star, color: AppColors.yellowColor,),
               SizedBox(width: width * .02,),
-              Text(view, style: AppStyles.regular12black.copyWith(color: AppColors.greyColor),),
+              Text("$view", style: AppStyles.regular12black.copyWith(color: AppColors.greyColor),),
             ],
           )
         ]

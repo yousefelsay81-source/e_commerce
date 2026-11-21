@@ -27,5 +27,10 @@ class AppTheme {
               )
           )
       ),
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.whiteColor,
+      surfaceTintColor: Colors.transparent,
+      scrolledUnderElevation: 0,
+    )
   );
 }

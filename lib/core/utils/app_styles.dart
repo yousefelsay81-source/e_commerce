@@ -19,4 +19,7 @@ class AppStyles
   static TextStyle bold36Black = GoogleFonts.inter(
       fontWeight: FontWeight.bold,fontSize: 36,color: AppColors.blackColor
   );
+  static TextStyle semiBold18Black = GoogleFonts.inter(
+      fontWeight: FontWeight.w700,fontSize: 18,color: AppColors.blackColor
+  );
 }

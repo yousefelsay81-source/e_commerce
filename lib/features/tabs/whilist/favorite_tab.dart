@@ -1,4 +1,12 @@
+import 'package:e_commerce/components/custom_app_bar.dart';
+import 'package:e_commerce/components/custom_text_filed.dart';
+import 'package:e_commerce/core/utils/app_images.dart';
+import 'package:e_commerce/components/top_picks.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+
+import '../../../core/utils/app_styles.dart';
+import '../home/custom_filter_and_sort.dart';
 
 class FavoriteTab extends StatefulWidget {
   const FavoriteTab({super.key});

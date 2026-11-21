@@ -17,4 +17,5 @@ class AppImages {
   static const String bannerImage1 = "assets/Rectangle 48.png";
   static const String bannerImage2 = "assets/unsplash_NoVnXXmDNi0.png";
   static const String productImage = "assets/Mask Group.png";
+  static const String blackWinterImage = "assets/blackWinter (1).png";
 }

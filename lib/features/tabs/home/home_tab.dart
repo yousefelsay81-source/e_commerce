@@ -1,11 +1,11 @@
+import 'package:e_commerce/components/custom_app_bar.dart';
 import 'package:e_commerce/components/custom_text_filed.dart';
 import 'package:e_commerce/core/utils/app_images.dart';
 import 'package:e_commerce/features/tabs/home/categoryList.dart';
 import 'package:e_commerce/features/tabs/home/custom_banner.dart';
 import 'package:e_commerce/features/tabs/home/custom_filter_and_sort.dart';
-import 'package:e_commerce/features/tabs/home/top_picks.dart';
+import 'package:e_commerce/components/top_picks.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_styles.dart';
 
@@ -22,22 +22,7 @@ class _HomeTabState extends State<HomeTab> {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(onPressed: (){}, icon: Icon(Icons.menu)),
-        title: Image.asset(AppImages.logoAppBar),
-        centerTitle: true,
-        actions: [
-          Padding(
-            padding: EdgeInsetsGeometry.only(right: width*.02),
-            child: InkWell(
-              onTap: (){},
-              child: CircleAvatar(
-                child: Image.asset(AppImages.profileImage),
-              ),
-            ),
-          )
-        ],
-      ),
+      appBar: CustomAppBar(),
       body: Padding(
         padding: EdgeInsets.all(8),
         child: SingleChildScrollView(
@@ -56,7 +41,7 @@ class _HomeTabState extends State<HomeTab> {
               SizedBox(height: height*.02,),
               Row(
                 children: [
-                  Text("All Featured",style: AppStyles.regular12black.copyWith(fontWeight: FontWeight.bold),),
+                  Text("All Featured",style: AppStyles.semiBold18Black),
                   Spacer(),
                   CustomFilterAndSort(text: "Sort", iconPath: Icons.swap_vert, onPressed: (){}),
                   SizedBox(width: width*.02,),
@@ -91,7 +76,7 @@ class _HomeTabState extends State<HomeTab> {
                   TextButton(onPressed: (){},
                       child: Text("View all",style: AppStyles.regular12ForgetPassword.copyWith(fontSize: 15),),
                   ),
-                  Icon(Icons.arrow_forward, color: AppColors.forgetPasswordColor)
+                  Icon(Icons.arrow_forward, color: AppColors.forgetPasswordColor) 
                 ],
               ),
               SizedBox(height: height * .02,),

@@ -5,4 +5,5 @@ class AppRoutes
   static const String forgetPasswordRoute = "forgetPassword_screen";
   static const String getStartedRoute = "getStarted_screen";
   static const String routeName = "profile_screen";
+  static const String shoppingName = "shopping_screen";
 }

@@ -1,5 +1,4 @@
 import 'package:e_commerce/components/custom_elevated_button.dart';
-import 'package:e_commerce/core/utils/app_images.dart';
 import 'package:e_commerce/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 

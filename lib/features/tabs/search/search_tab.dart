@@ -1,3 +1,5 @@
+import 'package:e_commerce/components/custom_text_filed.dart';
+import 'package:e_commerce/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class SearchTap extends StatefulWidget {
@@ -8,8 +10,29 @@ class SearchTap extends StatefulWidget {
 }
 
 class _SearchTapState extends State<SearchTap> {
+
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Search", style: AppStyles.semiBold18Black,),
+        centerTitle: true,
+      ),
+      body: Container(
+        padding: EdgeInsets.symmetric(vertical: height * .02, horizontal: width * .02),
+        child: Column(
+          children: [
+            SizedBox(
+              height: height * .07,
+                child: CustomTextFiled(labelText: "Search any Product",
+                  suffixIcon: Icon(Icons.mic),
+                )),
+
+          ],
+        ),
+      ),
+    );
   }
 }

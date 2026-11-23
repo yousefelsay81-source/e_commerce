@@ -22,4 +22,8 @@ class AppStyles
   static TextStyle semiBold18Black = GoogleFonts.inter(
       fontWeight: FontWeight.w700,fontSize: 18,color: AppColors.blackColor
   );
+  static TextStyle medium16white = GoogleFonts.inter(
+      fontWeight: FontWeight.w500,fontSize: 16,color: AppColors.whiteColor
+  );
+
 }

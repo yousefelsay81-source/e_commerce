@@ -60,8 +60,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){},
-        child: Icon(Icons.shopping_cart_outlined,size: 30,color: AppColors.blackColor,),),
+        onPressed: (){
+          Navigator.of(context).pushNamed(AppRoutes.shoppingName);
+        },
+        child: Image.asset(AppImages.shoppingIcon),),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: tabs[selectedIndex],
     );

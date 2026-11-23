@@ -37,7 +37,12 @@ class _FavoriteTabState extends State<FavoriteTab> {
             ),
             Row(
               children: [
-                Text("52,082+ Iteams ",style: AppStyles.semiBold18Black),
+                Column(
+                  children: [
+                    Text("Favorite", style: AppStyles.semiBold18Black,),
+                    Text("20 Product",style: AppStyles.medium12Form),
+                  ],
+                ),
                 Spacer(),
                 CustomFilterAndSort(text: "Sort", iconPath: Icons.swap_vert, onPressed: (){}),
                 SizedBox(width: width*.02,),

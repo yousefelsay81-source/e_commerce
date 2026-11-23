@@ -3,6 +3,7 @@ import 'package:e_commerce/features/forgetPassword_screen/forgetPassword_screen.
 import 'package:e_commerce/features/get_started_screen.dart';
 import 'package:e_commerce/features/profile_screen/profile_screen.dart';
 import 'package:e_commerce/features/register_screen/register_screen.dart';
+import 'package:e_commerce/features/tabs/shopping/shopping_screen.dart';
 import 'package:flutter/material.dart';
 import 'config/theme.dart';
 import 'features/login_screen/login_screen.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.loginRoute: (context) => LoginScreen(),
         AppRoutes.registerRoute: (context) => RegisterScreen(),
         AppRoutes.forgetPasswordRoute: (context) => ForgetPasswordScreen(),
+        AppRoutes.shoppingName: (context) => ShoppingScreen(),
       },
     );
   }

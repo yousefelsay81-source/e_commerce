@@ -1,6 +1,8 @@
-import 'package:e_commerce/components/custom_elevated_button.dart';
+import 'package:e_commerce/core/utils/app_images.dart';
 import 'package:e_commerce/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
+
+import '../core/components/custom_elevated_button.dart';
 
 class GetStartedScreen extends StatelessWidget {
   const GetStartedScreen({super.key});
@@ -14,7 +16,7 @@ class GetStartedScreen extends StatelessWidget {
         children: [
           Positioned.fill(
             child: Image.asset(
-              'assets/unsplash_fouVDmGXoPI.png',
+              AppImages.getStartedImage,
               fit: BoxFit.cover,
             ),
           ),

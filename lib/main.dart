@@ -1,14 +1,15 @@
 import 'package:e_commerce/config/routes.dart';
-import 'package:e_commerce/features/forgetPassword_screen/forgetPassword_screen.dart';
+import 'package:e_commerce/features/auth/presentation/views/forgetPassword_screen.dart';
 import 'package:e_commerce/features/get_started_screen.dart';
-import 'package:e_commerce/features/profile_screen/profile_screen.dart';
-import 'package:e_commerce/features/register_screen/register_screen.dart';
-import 'package:e_commerce/features/tabs/shopping/shopping_screen.dart';
+import 'package:e_commerce/features/home/presentation/view/profile_screen.dart';
+import 'package:e_commerce/features/auth/presentation/views/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'config/theme.dart';
-import 'features/login_screen/login_screen.dart';
+import 'features/auth/presentation/views/login_screen.dart';
+import 'features/home/presentation/view/tabs/shopping/shopping_screen.dart';
 
-void main() {
+void main()
+{
   runApp(const MyApp());
 }
 
